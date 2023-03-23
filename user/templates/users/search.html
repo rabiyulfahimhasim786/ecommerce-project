@@ -1,0 +1,24 @@
+{%block content%}
+    <h1> Search results </h1>
+    <ul>
+        {% for product in products %}
+        <div class="kk__homeInnerwrap">
+            <a href="product_details.html">   <div class="kk_imgages">
+                  <img src="{{ product.product_image }}">
+               </div>
+               <h3>DBU - Medical IVD</h3>
+               <p>Bioline Malaria Ag P.f/Pv</p>
+               <p>Bioline Malaria Ag P.f / Pan</p>
+               <p>Bioline HIV 1/2 3.0</p></a>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div>
+               <!-- <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p> -->
+            </div>
+            <li>{{ product.name }}-{{ product.description }}</li>
+        {% empty %}
+        <li> No products found</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

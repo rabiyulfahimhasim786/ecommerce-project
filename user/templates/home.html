@@ -1,0 +1,524 @@
+{%load static%}
+{%static "products" as baseUrl%}
+<!DOCTYPE html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Title of the document</title>
+   <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="{% static 'style.css'%}">
+
+   <style>
+      .wrapper_heder {
+      display: flex;
+      justify-content: space-between;
+      padding: 9px 20px 0px;
+      }
+   </style>
+</head>
+<body>
+   <nav >
+      <div id="container">
+      <div class="domain_header">
+         <div class="wrapper_heder">
+            <div class="kk-mainHeder_left">
+               <p>Call : <span>+91-8047632085</span></p>
+               <p>Email :<span>info@saaskin.in</span></p>
+            </div>
+            <div class="kk-mainHeder_right">
+               <p><span>4.6</span><img src="{%static 'images/star.png'%}"></p>
+               <a href=""><img src="{%static 'images/login.png' %}"> <span>sign in Register</span></a>
+               <div class="kk_socialIcon">
+                  <img src="{%static 'images/icon_fb.png'%}">
+                  <img src="{%static 'images/icon_insta.png'%}">
+                  <img src="{%static 'images/icon_linkedin.png'%}">
+                  <img src="{%static 'images/icon_twitter.png'%}"> <span>Blog</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="header">
+         <div class="wrapper">
+            <div id="nav">
+               <div class="kk-logo__banner">
+                  <img src="{%static 'images/logo.webp'%}">
+               </div>
+               <div class="kk-formInput">
+                  <form class="example" action="/search/" method="GET">
+                     <input type="text" placeholder="Search.." name="search">
+                     <button type="submit"><img src="{%static 'images/search.png'%}" /></button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- menu icons start -->
+   <section>
+      <div class="kk-menumainIcons__wrapping">
+         <div class="kk-menuIcons__mainwrapping">
+            <!-- <a class="kk-all__startIcons" href="javascript:void(0)"><img src="images/icon/menu_icon_001.png"/><span>All</span></a> -->
+            <a class="kk-all__sobIcons"href=""><img src="{%static 'images/icon/menu_icon_001.png' %}"/><span>All</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_002.png'%}"/><span>Medical Healthcare</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_003.png'%}"/><span>Medical RDT</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_004.png'%}"/><span>Medical FIA</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_005.png'%}"/><span>Medical Equipment</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_006.png'%}"/><span>Medical POCT</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_007.png'%}"/><span>Lab Consumable</span></a>  
+            <a href=""><img src="{%static 'images/icon/menu_icon_008.png'%}"/><span>Lab Equipment</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_009.png'%}"/><span>Medical Engineering</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_010.png'%}"/><span>Brands</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_002.png'%}"/><span>Medical Healthcare</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_003.png'%}"/><span>Medical RDT</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_004.png'%}"/><span>Medical FIA</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_005.png'%}"/><span>Medical Equipment</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_006.png'%}"/><span>Medical POCT</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_007.png'%}"/><span>Lab Consumable</span></a>  
+            <a href=""><img src="{%static 'images/icon/menu_icon_008.png'%}"/><span>Lab Equipment</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_009.png'%}"/><span>Medical Engineering</span></a>
+            <a href=""><img src="{%static 'images/icon/menu_icon_010.png'%}"/><span>Brands</span></a>
+         </div>
+      </div>
+   </section>
+   <!-- menu icons end -->
+   <!-- home products start -->
+   <section>
+      <div class="kk-home__products ">
+         <div class="kk-home__subproducts">
+            <div class="home-products__left" id="Categries">
+               <div class="home-products__leftsub">
+                  <div class="wrapper">
+                     <p class="selectstyle selectstyle--style1">
+                        <label for="favcity1" class="selectstyle__label">CATEGORIES</label>
+                        <span class="selectstyle__box">
+                           <select id="favcity1" name="favcity1" class="selectstyle__box__select" onchange="filter_by_category()">
+                              <!-- <option value="0">No favorite</option> -->
+                              <optgroup label="Products Categroy">
+                                 {% for category  in categorys %}
+                                    <option value="{{ category.id }}">{{ category.name }}</option>
+                                 {%endfor%}
+                                 
+                                 <!-- <option value="4">DBU - Healthcare</option>
+                                 <option value="8">DBU - Medical POCT</option>
+                                 <option value="11">DBU - Medical IVD</option>
+                                 <option value="3">DBU - Medical Equipments</option>
+                                 <option value="4">DBU - Medical ELISA</option>
+                                 <option value="8">DBU - Medical FIA</option>
+                                 <option value="11">MBU - Laboratory II</option>
+                                 <option value="3">DBU - Laboratory I</option>
+                                 <option value="4">DBU - Medical FIA-II</option>
+                                 <option value="8">DBU - Medical Consumables</option>
+                                 <option value="11">MBU - Engineering</option> -->
+                              </optgroup>
+                           </select>
+                        </span>
+                     </p>
+                     <p class="selectstyle selectstyle--style1">
+                        <label for="favcity1" class="selectstyle__label">PRODUCT TYPE</label>
+                        <span class="selectstyle__box">
+                           <select id="favcity1" name="favcity1" class="selectstyle__box__select">
+                              <!-- <option value="0">No favorite</option> -->
+                              <optgroup label="Products Type">
+                                 <option value="3">DBU - Medical RDT</option>
+                                 <option value="4">DBU - Healthcare</option>
+                                 <option value="8">DBU - Medical POCT</option>
+                                 <option value="11">DBU - Medical IVD</option>
+                                 <option value="3">DBU - Medical Equipments</option>
+                                 <option value="4">DBU - Medical ELISA</option>
+                                 <option value="8">DBU - Medical FIA</option>
+                                 <option value="11">MBU - Laboratory II</option>
+                                 <option value="3">DBU - Laboratory I</option>
+                                 <option value="4">DBU - Medical FIA-II</option>
+                                 <option value="8">DBU - Medical Consumables</option>
+                                 <option value="11">MBU - Engineering</option>
+                              </optgroup>
+                           </select>
+                        </span>
+                     </p>
+                     <p class="selectstyle selectstyle--style1">
+                        <label for="favcity1" class="selectstyle__label">BRAND</label>
+                        <span class="selectstyle__box">
+                           <select id="favcity1" name="favcity1" class="selectstyle__box__select">
+                              <!-- <option value="0">No favorite</option> -->
+                              <optgroup label="Brand">
+                                 <option value="3">DBU - Medical RDT</option>
+                                 <option value="4">DBU - Healthcare</option>
+                                 <option value="8">DBU - Medical POCT</option>
+                                 <option value="11">DBU - Medical IVD</option>
+                                 <option value="3">DBU - Medical Equipments</option>
+                                 <option value="4">DBU - Medical ELISA</option>
+                                 <option value="8">DBU - Medical FIA</option>
+                                 <option value="11">MBU - Laboratory II</option>
+                                 <option value="3">DBU - Laboratory I</option>
+                                 <option value="4">DBU - Medical FIA-II</option>
+                                 <option value="8">DBU - Medical Consumables</option>
+                                 <option value="11">MBU - Engineering</option>
+                              </optgroup>
+                           </select>
+                        </span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="category_based_display"></div>
+            <div class="home-products__right" id="product_display">               
+               <a href="#">
+               {%block content%}
+                  {% load custom_tags %}
+                  {% if products %}
+                     {% for product  in products %}
+                        <div class="kk__homeInnerwrap">
+                           <a href="">   
+                              <div class="kk_imgages">
+                                 <img src= "{{baseUrl}}/{{product.product_image}}">
+                              </div>
+                              <h3>{% get_category_name product.category_id %}</h3>
+                                 <p>{{ product.name }}-{{ product.description }}</p> 
+                           </a>
+                           <div class="star_images">
+                              <img src="{%static 'images/star.png'%}">
+                           </div>
+                           <!-- <p>$9999</p>
+                           <p>w/ 20l tray and load call - hb62</p> -->
+                        </div>  
+                     {% endfor %}
+                  {% else %}
+                        <h1>Products Not Found!!</h1>
+                  {% endif %}
+               {% endblock %}
+               <!-- <div class="kk__homeInnerwrap">
+                  <div class="kk_imgages">
+                     <img src="images/products/product_category01.jpg">
+                  </div>
+                  <h3>DBU - Medical RDT</h3>
+                  <p>STANDARD Q HIV 1/2 Ab Test</p>
+                  <p>STANDARD Q Dengue NS1 Ag</p>
+                  <p>STANDARD Q Dengue Ag+Ab Duo</p>
+                  <div class="star_images">
+                     <img src="images/star.png">
+                  </div></a>
+                  <p>$9999</p>
+               </div> -->
+               <!-- <div class="kk__homeInnerwrap">
+                  <a href="product_details.html"><div class="kk_imgages">
+                     <img src="images/products/product_category02.jpg">
+                  </div>
+                  <h3>DBU - Healthcare</h3>
+                  <p>Panbio COVID 19 Ag Rapid Test Device</p>
+                  <p>Abbott Panbio COVID-19 Antigen Self Test</p>
+                  <p>Sure Status Covid-19 Antigen Card Test Kit</p></a>
+               </div> -->
+               <!-- <div class="kk__homeInnerwrap">
+                  <a href="product_details.html"> <div class="kk_imgages">
+                  <img src="images/products/product_category03.jpg">
+               </div>
+               <h3>DBU - Medical POCT</h3>
+               <p>Pima CD4 Analyzer</p>
+               <p>Hemocue Hb 201 System</p>
+               <p>HemoCue Plasma/Low Hb System</p></a>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p> -->
+            </div>
+
+
+            
+
+            <!-- <div class="kk__homeInnerwrap">
+            <a href="product_details.html">   <div class="kk_imgages">
+                  <img src="images/products/product_category04.jpg">
+               </div>
+               <h3>DBU - Medical IVD</h3>
+               <p>Bioline Malaria Ag P.f/Pv</p>
+               <p>Bioline Malaria Ag P.f / Pan</p>
+               <p>Bioline HIV 1/2 3.0</p></a>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div>
+            <div class="kk__homeInnerwrap">
+            <a href="product_details.html">   <div class="kk_imgages">
+                  <img src="images/products/product_category05.jpg">
+               </div>
+               <h3>DBU - Medical Equipments</h3>
+               <p>Thermofisher Quantstudio 5 Real Time PCR System, 96 wells</p>
+               <p>BioRad CFX Opus 96 Real-Time PCR Instrument 0.2 mL, 96 Wells</p>
+               <p>Thermofisher Quantstudio 3 Real Time Pcr System, 0.2 mL, 96 wells</p></a>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div>
+            <div class="kk__homeInnerwrap">
+              <a href="product_details.html"> <div class="kk_imgages">
+                  <img src="images/products/product_category06.jpg">
+               </div>
+               <h3>DBU - Medical ELISA</h3>
+               <p>STANDARD E Dengue IgM Capture ELISA</p>
+               <p>Panbio Dengue IgM Capture ELISA</p>
+               <p>STANDARD E Dengue IgG Capture ELISA</p></a>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div>
+            <div class="kk__homeInnerwrap">
+               <a href="product_details.html"><div class="kk_imgages">
+                  <img src="images/products/product_category07.jpg">
+               </div>
+               <h3>DBU - Medical FIA</h3>
+               <p>ichroma Progesterone Test</p>
+               <p>Ichroma II Immunoassay Analyzer</p>
+               <p>Ichroma T3 Test</p>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div></a>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div>
+            <div class="kk__homeInnerwrap">
+              <a href="product_details.html"> <div class="kk_imgages">
+                  <img src="images/products/product_category08.jpg">
+               </div>
+               <h3>MBU - Laboratory II</h3>
+               <p>Labroid Urine Container</p>
+               <p>Labroid - Vacuum / Non Vacuum Blood Collection Tube- Sodium Citrate 3.2%</p>
+               <p>Labroid - Vacuum / Non Vacuum Blood Collection Tube- Glucose ( Fluoride Oxalate)</p>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div></a>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div>
+            <div class="kk__homeInnerwrap">
+            <a href="product_details.html">   <div class="kk_imgages">
+                  <img src="images/products/product_category09.jpg">
+               </div>
+               <h3>DBU - Laboratory I</h3>
+               <p>ART Pipette tips</p>
+               <p>Blue star Hard-top Deep Freezers indiamart</p>
+               <p>Finntip Accessories</p>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div></a>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div>
+            <div class="kk__homeInnerwrap">
+          <a href="product_details.html">     <div class="kk_imgages">
+                  <img src="images/products/product_category10.jpg">
+               </div>
+               <h3>DBU - Medical FIA-II</h3>
+               <p>SD Biosensor Standard F200 Analyzer</p>
+               <p>Standard F2400 Analyzer</p>
+               <p>Standard F100 Analyzer</p>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div></a>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div>
+            <div class="kk__homeInnerwrap">
+              <a href="product_details.html"> <div class="kk_imgages">
+                  <img src="images/products/product_category11.jpg">
+               </div>
+               <h3>DBU - Medical Consumables</h3>
+               <p>Carestream Dve X Ray Film</p>
+               <p>Nitrile Exam Gloves</p>
+               <p>Isolation Gown ( AAMI Level 4 & ASTM )</p>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div></a>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div>
+            <div class="kk__homeInnerwrap">
+             <a href="product_details.html">  <div class="kk_imgages">
+                  <img src="images/products/product_category12.jpg">
+               </div>
+               <h3>MBU - Engineering</h3>
+               <p>Fix Height Raising Backrest - Hospital Bed</p>
+               <p>Foot Operated Hand Sanitizer</p>
+               <p>Sheet Metal Enclosure</p>
+               <div class="star_images">
+                  <img src="images/star.png">
+               </div></a>
+               <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p>
+            </div> -->
+
+
+            
+               <!-- <p>$9999</p>
+                  <p>w/ 20l tray and load call - hb62</p> -->
+            </div>
+       
+         </div>
+      </div>
+   </section>
+   <footer class="footer">
+         <div class="sticky-stopper"></div>
+      <div class="container bottom_border">
+         <div class="row">
+            <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+               <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+               <!--headin5_amrc-->
+               <p class="mb10">SAASKIN started as a one room hospital furniture fabrication shop in Guindy, Chennai in 2007 and has since grown to a 36000 Sq.Ft Facility that provides Manufacturing , Distribution and Consulting Services in the field of Healthcare & Life Sciences Products to different markets across globe.</p>
+            </div>
+            <div class=" col-sm-4 col-md  col-6 col">
+               <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+               <!--headin5_amrc-->
+               <ul class="footer_ul_amrc">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <!-- <li><a href="#">Ebay & Amazon</a></li>
+                     <li><a href="#">Hair Masking/Clipping</a></li>
+                     <li><a href="#">Image Cropping</a></li> -->
+               </ul>
+               <!--footer_ul_amrc ends here-->
+            </div>
+            <div class=" col-sm-4 col-md  col-6 col">
+               <h5 class="headin5_amrc col_white_amrc pt2">Product Category</h5>
+               <!--headin5_amrc-->
+               <ul class="footer_ul_amrc">
+                  <li><a href="#">Medical Healthcare</a></li>
+                  <li><a href="#">Medical RDT</a></li>
+                  <li><a href="#">Medical FIA</a></li>
+                  <li><a href="#">Medical Equipment</a></li>
+                  <li><a href="#">Medical POCT</a></li>
+                  <li><a href="#">Lab Consumable</a></li>
+                  <li><a href="#">Lab Equipment</a></li>
+                  <li><a href="#">Medical Engineering</a></li>
+                  <li><a href="#">Brands</a></li>
+               </ul>
+               <!--footer_ul_amrc ends here-->
+            </div>
+            <div class=" col-sm-4 col-md  col-12 col">
+               <h5 class="headin5_amrc col_white_amrc pt2">Contact us</h5>
+               <!--headin5_amrc ends here-->
+               <ul class="footer_ul2_amrc">
+                  <li>
+                     <p><b>Saaskin Corporation Private Limited</b></p>
+                  </li>
+                  <li>
+                     <p>Door No 275 /184 , First Floor, Office No 2, Golden Enclave, Periyar Evr Salai , P.h. Road, Kilpauk, Chennai - 600010, Tamil Nadu, India</p>
+                  </li>
+                  <li>
+                     <p>08047632085
+                  <li> </p>
+               </ul>
+               <!--footer_ul2_amrc ends here-->
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <!--foote_bottom_ul_amrc ends here-->
+         <p class="text-center">Copyright @2023 | Designed With by <a href="www.brandingworld.net">Branding World Pvt.Ltd</a></p>
+         <!--social_footer_ul ends here-->
+      </div>
+   </footer>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+            $(document).ready(function() {
+  console.log( "document ready!" );
+
+  var $sticky = $('.sticky');
+  var $stickyrStopper = $('.sticky-stopper');
+  if (!!$sticky.offset()) { // make sure ".sticky" element exists
+
+    var generalSidebarHeight = $sticky.innerHeight();
+    var stickyTop = $sticky.offset().top;
+    var stickOffset = 0;
+    var stickyStopperPosition = $stickyrStopper.offset().top;
+    var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
+    var diff = stopPoint + stickOffset;
+
+    $(window).scroll(function(){ // scroll event
+      var windowTop = $(window).scrollTop(); // returns number
+
+      if (stopPoint < windowTop) {
+          $sticky.css({ position: 'absolute', top: diff });
+      } else if (stickyTop < windowTop+stickOffset) {
+          $sticky.css({ position: 'fixed', top: stickOffset });
+      } else {
+          $sticky.css({position: 'absolute', top: 'initial'});
+      }
+    });
+
+  }
+});
+
+   window.onscroll = changePos;
+   
+   function changePos() {
+    var header = document.getElementById("header");
+    if (window.pageYOffset > 60) {
+        header.style.position = "absolute";
+        header.style.top = pageYOffset + "px";
+    } else {
+        header.style.position = "";
+        header.style.top = "";
+    }
+   }
+   // window.onscroll = changePos1;
+   
+   // function changePos1() {
+   //  var header2 = document.getElementById("Categries");
+   //  if (window.pageYOffset > 200) {
+   //      header2.style.position = "relative";
+   //      header2.style.top = pageYOffset + "px";
+   //       header2.style.margin="-342px 0px 0px 0px";
+   //  } else {
+   //      header2.style.position = "";
+   //      header2.style.top = "";
+   //          header2.style.margin="0px 0px 0px 0px";
+   //  }
+   // }
+
+   $(document).ready(function(){
+      $('#favcity1').change(function(){
+         var option = $('#favcity1').val();
+         // alert(option);
+         $.ajax({
+            url: '/filter_by_category/',
+            data : {"option" : option },
+            success: function(response) {
+               console.log(response);
+               var results = '';
+               for (var i = 0; i < response.results.length; i++) {
+                  results +='<div class="kk__homeInnerwrap">';
+                     results +='<a href="#">';
+                        results +='<div class="kk_imgages">';
+                           results +='<img src="static/images/products/'+ response.results[i].product_image +'">';
+                        results +='</div>';
+                        results +='<h3>'+ response.results[i].category_name +'</h3>';
+                        results +='<p>'+ response.results[i].name +'-'+ response.results[i].description +'</p>';
+                     results +='</a>';
+                     results +='<div class="star_images">';
+                        results +='<img src="images/star.png">';
+                     results +='</div>';
+                  results +='</div>';
+                  // Add other fields as needed
+               }
+               $('#product_display').css('display', 'none');
+               $('#category_based_display').html(results);
+            }
+        });
+      })
+   });
+
+</script>
+</html>
